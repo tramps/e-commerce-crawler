@@ -7,8 +7,8 @@ crawler for shopee dd temu tk dy
 ```bash
 ├── crawler
 ├── crawler-api-shopee
-        create task
-        query task
+        create task：create task by itemid shopid, later fetch data via query task api
+        query task: fetch data by taskid, you can get the raw data in the data field of the response
 ├── crawler-api-dd
         create task
         query task
