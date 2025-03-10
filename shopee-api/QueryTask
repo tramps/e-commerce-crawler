@@ -1,6 +1,6 @@
 {
   "task api": {
-    "查询任务": {
+    "fetch task": {
       "Query Task Status": {
         "endpoint": "api/v1/task/query",
         "method": "GET",
