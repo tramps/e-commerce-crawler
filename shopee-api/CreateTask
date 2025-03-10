@@ -1,8 +1,8 @@
 # task api
 
-## 发布任务
+## publish task
 
-根据商品itemid, shopid发布任务
+publish task by itemid, shopid
 
 1.1 Create item task 
     - api/v1/task/create
@@ -37,11 +37,11 @@
   200: taskId:278390
   201: errorMsg
 
-其中：
+As：
 
-page 为可选，默认为 1
+page optional，default 1
 
-sort 为可选，默认为默认的综合排序，即为 relevancy。可选范围：'relevancy', 'ctime', 'sales', 'price_asc', 'price_desc'。
+sort optional，default relevancy。includes：'relevancy', 'ctime', 'sales', 'price_asc', 'price_desc'。
 
 
 ---
@@ -62,10 +62,10 @@ curl -X 'POST' \
   201: errorMsg
 
 
-其中：
+As：
 
-page 为可选，默认为 1
+page optional，default 1
 
-sort 为可选，默认为默认的综合排序，即为 relevancy。可选范围：'relevancy', 'ctime', 'sales', 'price_asc', 'price_desc'。
+sort optional，default relevancy。includes：'relevancy', 'ctime', 'sales', 'price_asc', 'price_desc'。
 
 ---
