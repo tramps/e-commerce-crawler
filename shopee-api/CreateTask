@@ -1,0 +1,71 @@
+# task api
+
+## 发布任务
+
+根据商品itemid, shopid发布任务
+
+1.1 Create item task 
+    - api/v1/task/create
+    - method: POST
+
+    curl -X 'POST' \
+    'http://101.200.91.78:2046/api/v1/task/create?taskType=item&itemId=10001791128&shopId=308370239&channel=test' \
+    -H 'accept: */*' \
+    -H 'X-API-Token: github' \
+    -d ''
+    
+    Response
+    
+    200: taskId:278389
+    201: errorMsg
+
+---
+
+1.2 Create shop_item_list task 
+  - api/v1/task/create
+  - method: POST
+
+  curl -X 'POST' \
+  'http://101.200.91.78:2046/api/v1/task/create?taskType=shop_item_list&shopId=308370239&page=5&sort=relevancy&channel=test' \
+  -H 'accept: */*' \
+  -H 'X-API-Token: github' \
+  -d ''
+  
+ 
+ Response
+  
+  200: taskId:278390
+  201: errorMsg
+
+其中：
+
+page 为可选，默认为 1
+
+sort 为可选，默认为默认的综合排序，即为 relevancy。可选范围：'relevancy', 'ctime', 'sales', 'price_asc', 'price_desc'。
+
+
+---
+
+1.3 Create search task 
+  - api/v1/task/create
+
+curl -X 'POST' \
+  'http://101.200.91.78:2046/api/v1/task/create?taskType=search&keyword=tesla&page=3&sort=relevancy&channel=test' \
+  -H 'accept: */*' \
+  -H 'X-API-Token: github' \
+  -d ''
+  
+  
+  Response
+  
+  200: taskId:278391
+  201: errorMsg
+
+
+其中：
+
+page 为可选，默认为 1
+
+sort 为可选，默认为默认的综合排序，即为 relevancy。可选范围：'relevancy', 'ctime', 'sales', 'price_asc', 'price_desc'。
+
+---
