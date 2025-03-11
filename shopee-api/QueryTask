@@ -5,7 +5,7 @@
         "endpoint": "api/v1/task/query",
         "method": "GET",
         "example": {
-          "curl": "curl -X 'GET' 'http://101.200.91.78:2046/api/v1/task/query?channel=test&taskId=301940' -H 'accept: */*' -H 'X-API-Token: github'",
+          "curl": "curl -X 'GET' 'http://101.200.91.78:2048/api/v1/task/query?channel=test&taskId=301940' -H 'accept: */*' -H 'X-API-Token: github'",
           "response": {
             "status": 200,
             "message": "success, return demo data, contact owner",
