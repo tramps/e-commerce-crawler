@@ -9,7 +9,7 @@ publish task by itemid, shopid
     - method: POST
 
     curl -X 'POST' \
-    'http://101.200.91.78:2046/api/v1/task/create?taskType=item&itemId=10001791128&shopId=308370239&channel=test' \
+    'http://101.200.91.78:2048/api/v1/task/create?taskType=item&itemId=10001791128&shopId=308370239&channel=test' \
     -H 'accept: */*' \
     -H 'X-API-Token: github' \
     -d ''
@@ -26,7 +26,7 @@ publish task by itemid, shopid
   - method: POST
 
   curl -X 'POST' \
-  'http://101.200.91.78:2046/api/v1/task/create?taskType=shop_item_list&shopId=308370239&page=5&sort=relevancy&channel=test' \
+  'http://101.200.91.78:2048/api/v1/task/create?taskType=shop_item_list&shopId=308370239&page=5&sort=relevancy&channel=test' \
   -H 'accept: */*' \
   -H 'X-API-Token: github' \
   -d ''
@@ -50,7 +50,7 @@ sort optional，default relevancy。includes：'relevancy', 'ctime', 'sales', 'p
   - api/v1/task/create
 
 curl -X 'POST' \
-  'http://101.200.91.78:2046/api/v1/task/create?taskType=search&keyword=tesla&page=3&sort=relevancy&channel=test' \
+  'http://101.200.91.78:2048/api/v1/task/create?taskType=search&keyword=tesla&page=3&sort=relevancy&channel=test' \
   -H 'accept: */*' \
   -H 'X-API-Token: github' \
   -d ''
